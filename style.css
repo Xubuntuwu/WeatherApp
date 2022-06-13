@@ -1,0 +1,95 @@
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #55C1FF;
+opacity: 0.8;
+background-image:  linear-gradient(30deg, #5887FF 12%, transparent 12.5%, transparent 87%, #5887FF 87.5%, #5887FF), linear-gradient(150deg, #5887FF 12%, transparent 12.5%, transparent 87%, #5887FF 87.5%, #5887FF), linear-gradient(30deg, #5887FF 12%, transparent 12.5%, transparent 87%, #5887FF 87.5%, #5887FF), linear-gradient(150deg, #5887FF 12%, transparent 12.5%, transparent 87%, #5887FF 87.5%, #5887FF), linear-gradient(60deg, #5887FF77 25%, transparent 25.5%, transparent 75%, #5887FF77 75%, #5887FF77), linear-gradient(60deg, #5887FF77 25%, transparent 25.5%, transparent 75%, #5887FF77 75%, #5887FF77);
+background-size: 74px 130px;
+background-position: 0 0, 0 0, 37px 65px, 37px 65px, 0 0, 37px 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherbox{
+    background-color: #715AFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.weatherbox img{
+    align-self: center;
+    width: 300px;
+    height: 300px;
+
+}
+
+.weatherbox ul{
+    list-style: none;
+    padding: 10px;
+    /* padding: 0; */
+}
+
+form{
+    border: none;
+}
+form ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form li{
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+span.inputcont{
+    display: grid;
+    gap: 5px;
+}
+span.inputcont span{
+    border-radius: 0 5px 5px 5px;
+}
+fieldset{
+    border: none;
+    border-radius: 10px;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form button{
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#weathercontent li{
+    font-weight: bold;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+#weathercontent li span.content{
+    width: 100%;
+    margin: 0 3px;
+    display: flex;
+    justify-content: space-between;
+}
+#weathercontent li span.unit{
+    font-weight: normal;
+    font-style: italic;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Weather App</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="weatherbox">
+            <img src="https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdWR5JTIwc2t5fGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="" id="weatherpic">
+            <ul id="weathercontent">
+                <li id="description"></li>
+                <li id="temp"> <span class="content"></span> <span class="unit"></span></li>
+                <li id="windspeed"><span class="content"></span> <span class="unit"></span></li>
+                <li id="country"></li>
+                <li id="city"></li>
+            </ul>
+            <form>
+                <fieldset>
+                    <ul>
+                    <li id="cityicont"><label for="cityi">City: </label> <span class="inputcont"><input type="text" id="cityi" required><span></span></span></li>
+                    <li><label for="units">Units: </label> <select id="units" required>
+                        <option value="metric">Metric (Celsius/meters per sec)</option>
+                        <option value="imperial">Imperial (Fahrenheit/ miles per hour)</option>
+                    </select></li>
+                    <li id="langcont"><label for="lang">Language: </label> <span class="inputcont"><input type="text" list="langlist" id="lang" required><span></span></span>
+                    <datalist id="langlist"></datalist></li>
+                    </ul>
+                    <button>Search</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
